@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solution Numérique — Développement Web & Applications Métier</title>
+    <meta name="description" content="Solution Numérique : conception et développement d'applications web sur mesure — gestion scolaire, stock, médicale, ressources. Spring Boot, Angular, Flutter, Docker.">
+    <meta name="keywords" content="développement web, Spring Boot, Angular, Flutter, Mali, Bamako, application métier, Docker">
+
+    <!-- Open Graph pour les partages -->
+    <meta property="og:title" content="Solution Numérique — Créateur de solutions digitales">
+    <meta property="og:description" content="Applications web métier sur mesure. Du concept à la production.">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">◈</span>
+                <span class="logo-text">Solution<span class="logo-accent">Numérique</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#processus">Processus</a></li>
+                <li><a href="#stack">Stack</a></li>
+                <li><a href="#contact" class="nav-cta">Me contacter</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <div class="badge">
+                <span class="badge-dot"></span>
+                Disponible pour de nouveaux projets
+            </div>
+            <h1 class="hero-title">
+                Je transforme vos idées en
+                <span class="gradient-text">solutions digitales</span>
+                performantes
+            </h1>
+            <p class="hero-subtitle">
+                Développeur full-stack et fondateur de <strong>Solution Numérique</strong>.
+                Je conçois des applications web métier sur mesure — de la conception à la mise en production.
+            </p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary">
+                    Démarrer un projet
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#projets" class="btn btn-ghost">
+                    Voir mes réalisations
+                </a>
+            </div>
+
+            <div class="hero-tech">
+                <span>Java</span>
+                <span>•</span>
+                <span>Spring Boot</span>
+                <span>•</span>
+                <span>Angular</span>
+                <span>•</span>
+                <span>Flutter</span>
+                <span>•</span>
+                <span>Docker</span>
+                <span>•</span>
+                <span>Cloudflare</span>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </header>
+
+    <!-- ========== STATS ========== -->
+    <section class="stats">
+        <div class="container stats-grid">
+            <div class="stat-card">
+                <div class="stat-number" data-target="6">0</div>
+                <div class="stat-label">Projets en cours</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="1">0</div>
+                <div class="stat-label">En production</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="100" data-suffix="%">0</div>
+                <div class="stat-label">Sur mesure</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number" data-target="24" data-suffix="/7">0</div>
+                <div class="stat-label">Support</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// Services</span>
+                <h2 class="section-title">Ce que je vous propose</h2>
+                <p class="section-subtitle">
+                    Des solutions digitales complètes pour digitaliser votre activité et gagner en productivité.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon">🚀</div>
+                    <h3>Applications Web Métier</h3>
+                    <p>Gestion scolaire, stock, ressources, médicale… Des outils sur mesure adaptés à votre activité.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>Applications Mobiles</h3>
+                    <p>Applications cross-platform en Flutter, disponibles sur Android et iOS avec une seule base de code.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">⚙️</div>
+                    <h3>API & Backend</h3>
+                    <p>Architecture REST sécurisée avec Spring Boot, authentification JWT, base de données MySQL/PostgreSQL.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h3>Interfaces Modernes</h3>
+                    <p>UI/UX responsive avec Angular, React ou Flutter. Design moderne et expérience utilisateur optimale.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">☁️</div>
+                    <h3>Déploiement & DevOps</h3>
+                    <p>Dockerisation complète, VPS Linux, reverse proxy Nginx, Cloudflare (DNS, SSL, CDN).</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">🛠️</div>
+                    <h3>Maintenance & Support</h3>
+                    <p>Accompagnement continu, corrections, évolutions, sauvegardes et monitoring de vos applications.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJETS ========== -->
+    <section class="section section-dark" id="projets">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// Réalisations</span>
+                <h2 class="section-title">Projets phares</h2>
+                <p class="section-subtitle">
+                    Un aperçu de ce que je construis. Chaque projet est unique et pensé pour un besoin réel.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Projet 1 : Ecole en production -->
+                <article class="project-card project-featured">
+                    <div class="project-badge">✅ En production</div>
+                    <div class="project-visual">
+                        <div class="project-mockup">
+                            <div class="mockup-bar">
+                                <span></span><span></span><span></span>
+                                <span class="mockup-url">collegeroyal.ml</span>
+                            </div>
+                            <div class="mockup-content">
+                                <div class="mockup-line w-70"></div>
+                                <div class="mockup-line w-40"></div>
+                                <div class="mockup-line w-90"></div>
+                                <div class="mockup-line w-60"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Collège Royal — Plateforme de gestion scolaire</h3>
+                        <p>Application complète de gestion des élèves, notes, ressources pédagogiques et communications.</p>
+                        <div class="project-tags">
+                            <span>Spring Boot</span>
+                            <span>Angular</span>
+                            <span>MySQL</span>
+                            <span>Docker</span>
+                        </div>
+                        <a href="https://collegeroyal.ml" target="_blank" class="project-link">
+                            Voir en ligne
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Projet 2 -->
+                <article class="project-card">
+                    <div class="project-badge badge-dev">🚧 En développement</div>
+                    <div class="project-icon">📦</div>
+                    <h3>Gestion de Stock</h3>
+                    <p>Entrées/sorties, inventaire, alertes de seuil, rapports.</p>
+                    <div class="project-tags">
+                        <span>Spring Boot</span><span>Angular</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-badge badge-dev">🚧 En développement</div>
+                    <div class="project-icon">🏥</div>
+                    <h3>Gestion Médicale</h3>
+                    <p>Patients, consultations, rendez-vous, dossiers médicaux.</p>
+                    <div class="project-tags">
+                        <span>Spring Boot</span><span>Angular</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-badge badge-dev">🚧 En développement</div>
+                    <div class="project-icon">🚗</div>
+                    <h3>Gestion de Voiture</h3>
+                    <p>Location, suivi entretien, réservations, flotte.</p>
+                    <div class="project-tags">
+                        <span>Spring Boot</span><span>Angular</span>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROCESSUS ========== -->
+    <section class="section" id="processus">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// Méthode</span>
+                <h2 class="section-title">Comment on travaille ensemble</h2>
+                <p class="section-subtitle">
+                    Un processus clair, transparent et itératif, du premier échange à la mise en ligne.
+                </p>
+            </div>
+
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <h3>Découverte</h3>
+                    <p>On échange sur votre besoin, vos objectifs et vos contraintes. Je vous propose une solution adaptée.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <h3>Conception</h3>
+                    <p>Maquettes, architecture technique, choix de la stack. Tout est validé avant le développement.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <h3>Développement</h3>
+                    <p>Développement itératif avec des points réguliers. Vous voyez l'avancement en temps réel.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <h3>Déploiement & Suivi</h3>
+                    <p>Mise en production, formation, et accompagnement pour la maintenance et les évolutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== STACK TECHNIQUE ========== -->
+    <section class="section section-dark" id="stack">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// Technologies</span>
+                <h2 class="section-title">Ma stack technique</h2>
+                <p class="section-subtitle">
+                    Des technologies modernes, éprouvées et adaptées à chaque projet.
+                </p>
+            </div>
+
+            <div class="stack-grid">
+                <div class="stack-category">
+                    <h4>Backend</h4>
+                    <ul>
+                        <li>Java 17</li>
+                        <li>Spring Boot</li>
+                        <li>Spring Security</li>
+                        <li>JPA / Hibernate</li>
+                        <li>REST API</li>
+                    </ul>
+                </div>
+                <div class="stack-category">
+                    <h4>Frontend</h4>
+                    <ul>
+                        <li>Angular</li>
+                        <li>TypeScript</li>
+                        <li>HTML5 / CSS3</li>
+                        <li>Tailwind CSS</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="stack-category">
+                    <h4>Mobile</h4>
+                    <ul>
+                        <li>Flutter</li>
+                        <li>Dart</li>
+                        <li>Android</li>
+                        <li>iOS</li>
+                    </ul>
+                </div>
+                <div class="stack-category">
+                    <h4>DevOps & Cloud</h4>
+                    <ul>
+                        <li>Docker & Compose</li>
+                        <li>Nginx</li>
+                        <li>Linux / VPS</li>
+                        <li>Cloudflare</li>
+                        <li>Git / GitHub</li>
+                    </ul>
+                </div>
+                <div class="stack-category">
+                    <h4>Bases de données</h4>
+                    <ul>
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+                <div class="stack-category">
+                    <h4>Outils</h4>
+                    <ul>
+                        <li>VS Code / IntelliJ</li>
+                        <li>Postman</li>
+                        <li>Maven</li>
+                        <li>npm</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA CONTACT ========== -->
+    <section class="section cta-section" id="contact">
+        <div class="container cta-content">
+            <h2 class="cta-title">
+                Un projet en tête ?<br>
+                <span class="gradient-text">Parlons-en.</span>
+            </h2>
+            <p class="cta-subtitle">
+                Que vous soyez une école, une clinique, un commerce ou une entreprise,
+                je peux vous aider à digitaliser votre activité.
+            </p>
+            <div class="cta-buttons">
+                <a href="mailto:contact@solutionnumerique.ml" class="btn btn-primary">
+                    📧 Envoyer un email
+                </a>
+                <a href="https://github.com/OdjiDev" target="_blank" class="btn btn-ghost">
+                    💻 Voir mon GitHub
+                </a>
+            </div>
+            <div class="cta-info">
+                <span>📍 Bamako, Mali</span>
+                <span>📱 +223 77 91 51 03</span>
+                <span>✉️ contact@solutionnumerique.ml</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <span class="logo-icon">◈</span>
+                <span>Solution Numérique</span>
+            </div>
+            <p class="footer-tagline">Créateur de solutions digitales — Bamako, Mali</p>
+            <p class="footer-copy">© <span id="year"></span> Solution Numérique. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
