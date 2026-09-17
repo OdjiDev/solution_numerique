@@ -593,8 +593,28 @@ body {
 }
 
 .project-icon {
-    font-size: 3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: rgba(0, 217, 255, 0.1);
+    border: 1px solid rgba(0, 217, 255, 0.2);
+    color: var(--accent);
     margin-bottom: 16px;
+    transition: var(--transition);
+}
+
+.project-icon svg {
+    display: block;
+}
+
+.project-card:hover .project-icon {
+    background: var(--gradient);
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 217, 255, 0.3);
 }
 
 .project-card h3 {
