@@ -473,10 +473,24 @@ body {
 }
 
 .service-icon {
-    font-size: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: rgba(0, 217, 255, 0.1);
+    border: 1px solid rgba(0, 217, 255, 0.2);
+    color: var(--accent);
     margin-bottom: 20px;
-    display: inline-block;
-    filter: drop-shadow(0 4px 12px rgba(0, 217, 255, 0.3));
+    transition: var(--transition);
+}
+
+.service-card:hover .service-icon {
+    background: var(--gradient);
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 217, 255, 0.3);
 }
 
 .service-card h3 {
@@ -537,8 +551,10 @@ body {
     }
 }
 
-.project-badge {
-    display: inline-block;
+ .project-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     padding: 6px 12px;
     background: rgba(34, 197, 94, 0.15);
     color: #4ADE80;
@@ -547,6 +563,27 @@ body {
     font-size: 0.8rem;
     font-weight: 600;
     margin-bottom: 20px;
+    line-height: 1;
+    white-space: nowrap;
+}
+.project-badge svg {
+    animation: badgePulse 2.5s ease-in-out infinite;
+}
+
+@keyframes badgePulse {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0.6; }
+}
+
+.project-badge svg {
+    flex-shrink: 0;
+    display: block;
+}
+
+.badge-dev {
+    background: rgba(251, 191, 36, 0.15);
+    color: #FBBF24;
+    border-color: rgba(251, 191, 36, 0.3);
 }
 
 .badge-dev {
@@ -879,16 +916,36 @@ body {
     color: var(--text-muted);
 }
 
-.cta-info a {
+.cta-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     color: var(--text-muted);
     text-decoration: none;
     transition: var(--transition);
+    font-size: 0.9rem;
 }
 
-.cta-info a:hover {
+.cta-item:hover {
     color: var(--accent);
+    transform: translateY(-2px);
 }
 
+.cta-icon {
+    flex-shrink: 0;
+    color: var(--accent);
+    transition: var(--transition);
+}
+
+.cta-item:hover .cta-icon {
+    filter: drop-shadow(0 0 8px rgba(0, 217, 255, 0.6));
+}
+
+/* WhatsApp a une couleur verte caractéristique */
+.cta-item[href*="wa.me"]:hover .cta-icon {
+    color: #25D366;
+    filter: drop-shadow(0 0 8px rgba(37, 211, 102, 0.5));
+}
 /* ========== FORMULAIRE DE CONTACT ========== */
 .contact-form {
     max-width: 640px;
