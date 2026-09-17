@@ -7,15 +7,66 @@
     <meta name="description" content="Solution Numérique : conception et développement d'applications web sur mesure — gestion scolaire, stock, médicale, ressources. Spring Boot, Angular, Flutter, Docker.">
     <meta name="keywords" content="développement web, Spring Boot, Angular, Flutter, Mali, Bamako, application métier, Docker">
 
-    <!-- Open Graph pour les partages -->
+    <!-- Canonical -->
+    <link rel="canonical" href="https://solutionnumerique.com/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Open Graph -->
     <meta property="og:title" content="Solution Numérique — Créateur de solutions digitales">
     <meta property="og:description" content="Applications web métier sur mesure. Du concept à la production.">
     <meta property="og:type" content="website">
+    <meta property="og:url" content="https://solutionnumerique.com/">
+    <meta property="og:site_name" content="Solution Numérique">
+    <meta property="og:image" content="https://solutionnumerique.com/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="fr_FR">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Solution Numérique — Créateur de solutions digitales">
+    <meta name="twitter:description" content="Applications web métier sur mesure. Du concept à la production.">
+    <meta name="twitter:image" content="https://solutionnumerique.com/og-image.png">
+
+    <!-- Theme color -->
+    <meta name="theme-color" content="#0A0E27">
 
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- JSON-LD : ProfessionalService -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Solution Numérique",
+      "url": "https://solutionnumerique.com",
+      "logo": "https://solutionnumerique.com/og-image.png",
+      "description": "Développement d'applications web métier sur mesure — gestion scolaire, stock, médicale, RH.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bamako",
+        "addressCountry": "ML"
+      },
+      "telephone": "+22377915103",
+      "email": "contact@solutionnumerique.ml",
+      "areaServed": { "@type": "Country", "name": "Mali" },
+      "sameAs": [
+        "https://github.com/OdjiDev",
+        "https://stock.numeriquesolution.com"
+      ],
+      "makesOffer": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Applications Web Métier" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Applications Mobiles Flutter" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "API & Backend Spring Boot" } }
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -26,14 +77,15 @@
                 <span class="logo-icon">◈</span>
                 <span class="logo-text">Solution<span class="logo-accent">Numérique</span></span>
             </a>
-            <ul class="nav-links">
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#services">Services</a></li>
                 <li><a href="#projets">Projets</a></li>
+                <li><a href="#apropos">À propos</a></li>
                 <li><a href="#processus">Processus</a></li>
                 <li><a href="#stack">Stack</a></li>
                 <li><a href="#contact" class="nav-cta">Me contacter</a></li>
             </ul>
-            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -80,7 +132,7 @@
                 <span>Cloudflare</span>
             </div>
         </div>
-        <div class="scroll-indicator">
+        <div class="scroll-indicator" aria-hidden="true">
             <span></span>
         </div>
     </header>
@@ -89,20 +141,20 @@
     <section class="stats">
         <div class="container stats-grid">
             <div class="stat-card">
-                <div class="stat-number" data-target="6">0</div>
-                <div class="stat-label">Projets en cours</div>
+                <div class="stat-number" data-target="10" data-suffix="+">0</div>
+                <div class="stat-label">Sites en production</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number" data-target="1">0</div>
-                <div class="stat-label">En production</div>
+                <div class="stat-number" data-target="15" data-suffix="+">0</div>
+                <div class="stat-label">Projets réalisés</div>
             </div>
             <div class="stat-card">
                 <div class="stat-number" data-target="100" data-suffix="%">0</div>
                 <div class="stat-label">Sur mesure</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number" data-target="24" data-suffix="/7">0</div>
-                <div class="stat-label">Support</div>
+                <div class="stat-number" data-target="24" data-suffix="h">0</div>
+                <div class="stat-label">Délai de réponse</div>
             </div>
         </div>
     </section>
@@ -165,14 +217,14 @@
                 <span class="section-tag">// Réalisations</span>
                 <h2 class="section-title">Projets phares</h2>
                 <p class="section-subtitle">
-                    Un aperçu de ce que je construis. Chaque projet est unique et pensé pour un besoin réel.
+                    Plus de 10 sites en production. Un aperçu de ce que je construis — chaque projet est unique et pensé pour un besoin réel.
                 </p>
             </div>
 
             <div class="projects-grid">
-                <!-- Projet 1 : Ecole en production -->
+
+                <!-- PROJET PHARE 1 : Collège Royal -->
                 <article class="project-card project-featured">
-                    <div class="project-badge">✅ En production</div>
                     <div class="project-visual">
                         <div class="project-mockup">
                             <div class="mockup-bar">
@@ -188,57 +240,149 @@
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Collège Royal — Plateforme de gestion scolaire</h3>
-                        <p>Application complète de gestion des élèves, notes, ressources pédagogiques et communications.</p>
+                        <div class="project-badge">✅ En production</div>
+                        <h3>Collège Royal — Gestion scolaire</h3>
+                        <p>Plateforme complète : élèves, notes, bulletins, ressources pédagogiques et communication parents-école.</p>
                         <div class="project-tags">
-                            <span>Spring Boot</span>
-                            <span>Angular</span>
-                            <span>MySQL</span>
-                            <span>Docker</span>
+                            <span>Spring Boot</span><span>Angular</span><span>MySQL</span><span>Docker</span>
                         </div>
-                        <a href="https://collegeroyal.ml" target="_blank" class="project-link">
+                        <a href="https://collegeroyal.ml" target="_blank" rel="noopener" class="project-link">
                             Voir en ligne
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
                         </a>
                     </div>
                 </article>
 
-                <!-- Projet 2 -->
-                <article class="project-card">
-                    <div class="project-badge badge-dev">🚧 En développement</div>
-                    <div class="project-icon">📦</div>
-                    <h3>Gestion de Stock</h3>
-                    <p>Entrées/sorties, inventaire, alertes de seuil, rapports.</p>
-                    <div class="project-tags">
-                        <span>Spring Boot</span><span>Angular</span>
+                <!-- PROJET PHARE 2 : Stock -->
+                <article class="project-card project-featured">
+                    <div class="project-visual">
+                        <div class="project-mockup">
+                            <div class="mockup-bar">
+                                <span></span><span></span><span></span>
+                                <span class="mockup-url">stock.numeriquesolution.com</span>
+                            </div>
+                            <div class="mockup-content">
+                                <div class="mockup-line w-90"></div>
+                                <div class="mockup-line w-60"></div>
+                                <div class="mockup-line w-70"></div>
+                                <div class="mockup-line w-40"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-badge">✅ En production</div>
+                        <h3>Gestion de Stock — Plateforme commerciale</h3>
+                        <p>Suivi des entrées/sorties, inventaire temps réel, alertes de seuil, rapports et gestion multi-utilisateurs.</p>
+                        <div class="project-tags">
+                            <span>Spring Boot</span><span>Angular</span><span>MySQL</span><span>Docker</span><span>JWT</span>
+                        </div>
+                        <a href="https://stock.numeriquesolution.com/login" target="_blank" rel="noopener" class="project-link">
+                            Voir la démo
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                        </a>
                     </div>
                 </article>
 
+                <!-- Autres projets en production -->
                 <article class="project-card">
-                    <div class="project-badge badge-dev">🚧 En développement</div>
+                    <div class="project-badge">✅ En production</div>
                     <div class="project-icon">🏥</div>
                     <h3>Gestion Médicale</h3>
-                    <p>Patients, consultations, rendez-vous, dossiers médicaux.</p>
-                    <div class="project-tags">
-                        <span>Spring Boot</span><span>Angular</span>
-                    </div>
+                    <p>Patients, consultations, rendez-vous, dossiers médicaux et facturation.</p>
+                    <div class="project-tags"><span>Spring Boot</span><span>Angular</span><span>PostgreSQL</span></div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-badge">✅ En production</div>
+                    <div class="project-icon">🚗</div>
+                    <h3>Gestion de Flotte Auto</h3>
+                    <p>Location, suivi entretien, réservations, facturation et historique des véhicules.</p>
+                    <div class="project-tags"><span>Spring Boot</span><span>Angular</span><span>MySQL</span></div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-badge">✅ En production</div>
+                    <div class="project-icon">🏢</div>
+                    <h3>Gestion des Ressources Humaines</h3>
+                    <p>Employés, congés, paie, évaluations et organigramme dynamique.</p>
+                    <div class="project-tags"><span>Spring Boot</span><span>Angular</span><span>MySQL</span></div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-badge">✅ En production</div>
+                    <div class="project-icon">💼</div>
+                    <h3>Portail Client & Facturation</h3>
+                    <p>Espace client, devis, factures PDF, paiements et suivi des commandes.</p>
+                    <div class="project-tags"><span>Spring Boot</span><span>Angular</span><span>Stripe</span></div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-badge">✅ En production</div>
+                    <div class="project-icon">🛒</div>
+                    <h3>E-commerce sur mesure</h3>
+                    <p>Catalogue produits, panier, paiement mobile money et back-office admin.</p>
+                    <div class="project-tags"><span>Spring Boot</span><span>Angular</span><span>MySQL</span></div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-badge">✅ En production</div>
+                    <div class="project-icon">📚</div>
+                    <h3>Bibliothèque Numérique</h3>
+                    <p>Gestion des ouvrages, prêts, retours, réservations et amendes.</p>
+                    <div class="project-tags"><span>Spring Boot</span><span>Angular</span><span>MySQL</span></div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-badge">✅ En production</div>
+                    <div class="project-icon">🍽️</div>
+                    <h3>Gestion Restaurant</h3>
+                    <p>Menus, commandes, tables, caisse et suivi des stocks cuisine.</p>
+                    <div class="project-tags"><span>Spring Boot</span><span>Angular</span><span>MySQL</span></div>
                 </article>
 
                 <article class="project-card">
                     <div class="project-badge badge-dev">🚧 En développement</div>
-                    <div class="project-icon">🚗</div>
-                    <h3>Gestion de Voiture</h3>
-                    <p>Location, suivi entretien, réservations, flotte.</p>
-                    <div class="project-tags">
-                        <span>Spring Boot</span><span>Angular</span>
-                    </div>
+                    <div class="project-icon">📱</div>
+                    <h3>Application Mobile École</h3>
+                    <p>Version mobile Flutter pour parents et élèves : notes, absences, actualités.</p>
+                    <div class="project-tags"><span>Flutter</span><span>Dart</span><span>REST API</span></div>
                 </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== À PROPOS ========== -->
+    <section class="section" id="apropos">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-photo">
+                    <img src="photo.jpg" alt="Portrait du fondateur de Solution Numérique" loading="lazy">
+                </div>
+                <div class="about-text">
+                    <span class="section-tag">// À propos</span>
+                    <h2 class="section-title">Derrière le code</h2>
+                    <p>
+                        Je suis <strong>fondateur de Solution Numérique</strong>, développeur full-stack basé à Bamako.
+                        J'accompagne écoles, cliniques et entreprises dans leur transformation digitale.
+                    </p>
+                    <p>
+                        Ma spécialité : transformer un besoin métier complexe en une application
+                        simple, rapide et fiable. Je maîtrise toute la chaîne — du design à la
+                        mise en production, en passant par l'hébergement et la maintenance.
+                    </p>
+                    <div class="about-stats">
+                        <div><strong>10+</strong><span>Sites livrés</span></div>
+                        <div><strong>15+</strong><span>Projets</span></div>
+                        <div><strong>100%</strong><span>Sur mesure</span></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- ========== PROCESSUS ========== -->
-    <section class="section" id="processus">
+    <section class="section section-dark" id="processus">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">// Méthode</span>
@@ -274,7 +418,7 @@
     </section>
 
     <!-- ========== STACK TECHNIQUE ========== -->
-    <section class="section section-dark" id="stack">
+    <section class="section" id="stack">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">// Technologies</span>
@@ -356,18 +500,31 @@
                 Que vous soyez une école, une clinique, un commerce ou une entreprise,
                 je peux vous aider à digitaliser votre activité.
             </p>
-            <div class="cta-buttons">
-                <a href="mailto:contact@solutionnumerique.ml" class="btn btn-primary">
-                    📧 Envoyer un email
-                </a>
-                <a href="https://github.com/OdjiDev" target="_blank" class="btn btn-ghost">
-                    💻 Voir mon GitHub
-                </a>
-            </div>
+
+            <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                <!-- Remplacez par votre clé Web3Forms (gratuit sur web3forms.com) -->
+                <input type="hidden" name="access_key" value="VOTRE_CLE_WEB3FORMS">
+                <input type="hidden" name="subject" value="Nouveau message depuis solutionnumerique.com">
+                <input type="checkbox" name="botcheck" style="display:none">
+
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Votre nom" required>
+                    <input type="email" name="email" placeholder="Votre email" required>
+                </div>
+                <input type="text" name="subject_line" placeholder="Sujet (ex: Site pour mon école)">
+                <textarea name="message" rows="5" placeholder="Décrivez votre projet..." required></textarea>
+                <button type="submit" class="btn btn-primary">
+                    Envoyer le message
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <p class="form-status" id="formStatus"></p>
+            </form>
+
             <div class="cta-info">
                 <span>📍 Bamako, Mali</span>
-                <span>📱 +223 77 91 51 03</span>
-                <span>✉️ contact@solutionnumerique.ml</span>
+                <a href="tel:+22377915103">📱 +223 77 91 51 03</a>
+                <a href="mailto:contact@solutionnumerique.ml">✉️ contact@solutionnumerique.ml</a>
+                <a href="https://wa.me/22377915103" target="_blank" rel="noopener">💬 WhatsApp</a>
             </div>
         </div>
     </section>
