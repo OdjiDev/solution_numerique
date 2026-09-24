@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <meta name="keywords" content="développement web, Spring Boot, Angular, Flutter, Mali, Bamako, application métier, Docker">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://solutionnumerique.com/">
+    <link rel="canonical" href="https://numeriquesolution.com/">
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
@@ -18,9 +18,9 @@
     <meta property="og:title" content="Solution Numérique — Créateur de solutions digitales">
     <meta property="og:description" content="Applications web métier sur mesure. Du concept à la production.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://solutionnumerique.com/">
+    <meta property="og:url" content="https://numeriquesolution.com/">
     <meta property="og:site_name" content="Solution Numérique">
-    <meta property="og:image" content="https://solutionnumerique.com/og-image.png">
+    <meta property="og:image" content="https://numeriquesolution.com/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta property="og:locale" content="fr_FR">
@@ -29,7 +29,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Solution Numérique — Créateur de solutions digitales">
     <meta name="twitter:description" content="Applications web métier sur mesure. Du concept à la production.">
-    <meta name="twitter:image" content="https://solutionnumerique.com/og-image.png">
+    <meta name="twitter:image" content="https://numeriquesolution.com/og-image.png">
 
     <!-- Theme color -->
     <meta name="theme-color" content="#0A0E27">
@@ -45,8 +45,8 @@
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
       "name": "Solution Numérique",
-      "url": "https://solutionnumerique.com",
-      "logo": "https://solutionnumerique.com/og-image.png",
+      "url": "https://numeriquesolution.com",
+      "logo": "https://numeriquesolution.com/og-image.png",
       "description": "Développement d'applications web métier sur mesure — gestion scolaire, stock, médicale, RH.",
       "address": {
         "@type": "PostalAddress",
@@ -54,7 +54,7 @@
         "addressCountry": "ML"
       },
       "telephone": "+22377915103",
-      "email": "contact@solutionnumerique.ml",
+      "email": "contact@numeriquesolution.com",
       "areaServed": { "@type": "Country", "name": "Mali" },
       "sameAs": [
         "https://github.com/OdjiDev",
@@ -73,17 +73,17 @@
     <!-- ========== NAVBAR ========== -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo">
-                <span class="logo-icon">◈</span>
+            <a href="#" class="logo" aria-label="Solution Numérique - Accueil">
+                <img src="logo.png" alt="Logo Solution Numérique" class="logo-img">
                 <span class="logo-text">Solution<span class="logo-accent">Numérique</span></span>
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#services">Services</a></li>
                 <li><a href="#projets">Projets</a></li>
                 <li><a href="#apropos">À propos</a></li>
+                <li><a href="#temoignages">Témoignages</a></li>
                 <li><a href="#processus">Processus</a></li>
-                <li><a href="#stack">Stack</a></li>
-                <li><a href="#contact" class="nav-cta">Me contacter</a></li>
+                <li><a href="#contact" class="nav-cta">Nous contacter</a></li>
             </ul>
             <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
                 <span></span><span></span><span></span>
@@ -97,16 +97,16 @@
         <div class="container hero-content">
             <div class="badge">
                 <span class="badge-dot"></span>
-                Disponible pour de nouveaux projets
+                Disponibles pour de nouveaux projets
             </div>
             <h1 class="hero-title">
-                Je transforme vos idées en
+                Nous transformons vos idées en
                 <span class="gradient-text">solutions digitales</span>
                 performantes
             </h1>
             <p class="hero-subtitle">
-                Développeur full-stack et fondateur de <strong>Solution Numérique</strong>.
-                Je conçois des applications web métier sur mesure — de la conception à la mise en production.
+                Équipe full-stack et fondateurs de <strong>Solution Numérique</strong>.
+                Nous concevons des applications web métier sur mesure — de la conception à la mise en production.
             </p>
             <div class="hero-actions">
                 <a href="#contact" class="btn btn-primary">
@@ -114,7 +114,7 @@
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
                 <a href="#projets" class="btn btn-ghost">
-                    Voir mes réalisations
+                    Voir nos réalisations
                 </a>
             </div>
 
@@ -141,11 +141,11 @@
     <section class="stats">
         <div class="container stats-grid">
             <div class="stat-card">
-                <div class="stat-number" data-target="10" data-suffix="+">0</div>
+                <div class="stat-number" data-target="3" data-suffix="+">0</div>
                 <div class="stat-label">Sites en production</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number" data-target="15" data-suffix="+">0</div>
+                <div class="stat-number" data-target="6" data-suffix="+">0</div>
                 <div class="stat-label">Projets réalisés</div>
             </div>
             <div class="stat-card">
@@ -153,109 +153,104 @@
                 <div class="stat-label">Sur mesure</div>
             </div>
             <div class="stat-card">
-                <div class="stat-number" data-target="24" data-suffix="h">0</div>
+                <div class="stat-number" data-target="4" data-suffix="h">0</div>
                 <div class="stat-label">Délai de réponse</div>
             </div>
         </div>
     </section>
-<!-- ========== SERVICES ========== -->
-<section class="section" id="services">
-    <div class="container">
-        <div class="section-header">
-            <span class="section-tag">// Services</span>
-            <h2 class="section-title">Ce que je vous propose</h2>
-            <p class="section-subtitle">
-                Des solutions digitales complètes pour digitaliser votre activité et gagner en productivité.
-            </p>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="section" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// Services</span>
+                <h2 class="section-title">Ce que nous vous proposons</h2>
+                <p class="section-subtitle">
+                    Des solutions digitales complètes pour digitaliser votre activité et gagner en productivité.
+                </p>
+            </div>
+
+            <div class="services-grid">
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <h3>Applications Web Métier</h3>
+                    <p>Gestion scolaire, stock, ressources, médicale… Des outils sur mesure adaptés à votre activité.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                            <line x1="12" y1="18" x2="12.01" y2="18"/>
+                        </svg>
+                    </div>
+                    <h3>Applications Mobiles</h3>
+                    <p>Applications cross-platform en Flutter, disponibles sur Android et iOS avec une seule base de code.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                            <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
+                        </svg>
+                    </div>
+                    <h3>API & Backend</h3>
+                    <p>Architecture REST sécurisée avec Spring Boot, authentification JWT, base de données MySQL/PostgreSQL.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/>
+                            <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/>
+                            <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/>
+                            <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/>
+                            <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/>
+                        </svg>
+                    </div>
+                    <h3>Interfaces Modernes</h3>
+                    <p>UI/UX responsive avec Angular, React ou Flutter. Design moderne et expérience utilisateur optimale.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
+                        </svg>
+                    </div>
+                    <h3>Déploiement & DevOps</h3>
+                    <p>Dockerisation complète, VPS Linux, reverse proxy Nginx, Cloudflare (DNS, SSL, CDN).</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+                        </svg>
+                    </div>
+                    <h3>Maintenance & Support</h3>
+                    <p>Accompagnement continu, corrections, évolutions, sauvegardes et monitoring de vos applications.</p>
+                </article>
+
+            </div>
         </div>
-
-        <div class="services-grid">
-
-            <!-- 1. Applications Web Métier — Icône : Éclair -->
-            <article class="service-card">
-                <div class="service-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/>
-                    </svg>
-                </div>
-                <h3>Applications Web Métier</h3>
-                <p>Gestion scolaire, stock, ressources, médicale… Des outils sur mesure adaptés à votre activité.</p>
-            </article>
-
-            <!-- 2. Applications Mobiles — Icône : Smartphone -->
-            <article class="service-card">
-                <div class="service-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
-                        <line x1="12" y1="18" x2="12.01" y2="18"/>
-                    </svg>
-                </div>
-                <h3>Applications Mobiles</h3>
-                <p>Applications cross-platform en Flutter, disponibles sur Android et iOS avec une seule base de code.</p>
-            </article>
-
-            <!-- 3. API & Backend — Icône : Serveur / Base de données -->
-            <article class="service-card">
-                <div class="service-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <ellipse cx="12" cy="5" rx="9" ry="3"/>
-                        <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
-                        <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
-                    </svg>
-                </div>
-                <h3>API & Backend</h3>
-                <p>Architecture REST sécurisée avec Spring Boot, authentification JWT, base de données MySQL/PostgreSQL.</p>
-            </article>
-
-            <!-- 4. Interfaces Modernes — Icône : Palette / Design -->
-            <article class="service-card">
-                <div class="service-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/>
-                        <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/>
-                        <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/>
-                        <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/>
-                        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/>
-                    </svg>
-                </div>
-                <h3>Interfaces Modernes</h3>
-                <p>UI/UX responsive avec Angular, React ou Flutter. Design moderne et expérience utilisateur optimale.</p>
-            </article>
-
-            <!-- 5. Déploiement & DevOps — Icône : Cloud -->
-            <article class="service-card">
-                <div class="service-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
-                    </svg>
-                </div>
-                <h3>Déploiement & DevOps</h3>
-                <p>Dockerisation complète, VPS Linux, reverse proxy Nginx, Cloudflare (DNS, SSL, CDN).</p>
-            </article>
-
-            <!-- 6. Maintenance & Support — Icône : Outils / Clé à molette -->
-            <article class="service-card">
-                <div class="service-icon">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
-                    </svg>
-                </div>
-                <h3>Maintenance & Support</h3>
-                <p>Accompagnement continu, corrections, évolutions, sauvegardes et monitoring de vos applications.</p>
-            </article>
-
-        </div>
-    </div>
-</section>
+    </section>
 
     <!-- ========== PROJETS ========== -->
     <section class="section section-dark" id="projets">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">// Réalisations</span>
-                <h2 class="section-title">Projets phares</h2>
+                <h2 class="section-title">Nos projets phares</h2>
                 <p class="section-subtitle">
-                    Plus de 10 sites en production. Un aperçu de ce que je construis — chaque projet est unique et pensé pour un besoin réel.
+                    Un aperçu de ce que nous construisons — chaque projet est unique et pensé pour un besoin réel.
                 </p>
             </div>
 
@@ -279,12 +274,12 @@
                     </div>
                     <div class="project-info">
                         <div class="project-badge">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                            <polyline points="22 4 12 14.01 9 11.01"/>
-                        </svg>
-                        En production
-                    </div>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            En production
+                        </div>
                         <h3>Collège Royal — Gestion scolaire</h3>
                         <p>Plateforme complète : élèves, notes, bulletins, ressources pédagogiques et communication parents-école.</p>
                         <div class="project-tags">
@@ -313,13 +308,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="project-info"><div class="project-badge">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                            <polyline points="22 4 12 14.01 9 11.01"/>
-                        </svg>
-                        En production
-                    </div>
+                    <div class="project-info">
+                        <div class="project-badge">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                <polyline points="22 4 12 14.01 9 11.01"/>
+                            </svg>
+                            En production
+                        </div>
                         <h3>Gestion de Stock — Plateforme commerciale</h3>
                         <p>Suivi des entrées/sorties, inventaire temps réel, alertes de seuil, rapports et gestion multi-utilisateurs.</p>
                         <div class="project-tags">
@@ -332,168 +328,165 @@
                     </div>
                 </article>
 
-                <!-- Autres projets en production -->
+                <!-- Projet : Gestion Médicale -->
                 <article class="project-card">
-                                <div class="project-badge">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                        <polyline points="22 4 12 14.01 9 11.01"/>
-                    </svg>
-                    En production
-                </div>
-                    <!--  Médical -->
-                <div class="project-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <circle cx="12" cy="12" r="10"/>
-                        <path d="M12 8v8M8 12h8"/>
-                    </svg>
-                </div>
+                    <div class="project-badge badge-dev">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        En développement
+                    </div>
+                    <div class="project-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 8v8M8 12h8"/>
+                        </svg>
+                    </div>
                     <h3>Gestion Médicale</h3>
                     <p>Patients, consultations, rendez-vous, dossiers médicaux et facturation.</p>
                     <div class="project-tags"><span>Spring Boot</span><span>Angular</span><span>PostgreSQL</span></div>
                 </article>
 
+                <!-- Projet : Gestion de Flotte Auto -->
                 <article class="project-card">
-                   <div class="project-badge">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                        <polyline points="22 4 12 14.01 9 11.01"/>
-                    </svg>
-                    En production
-                </div>
-                   <!--  Voiture -->
-                <div class="project-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M5 17h14M5 17a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM23 17a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
-                        <path d="M5 17H3v-5l2-6h14l2 6v5h-2"/>
-                        <path d="M8 11h8"/>
-                    </svg>
-                </div>
+                    <div class="project-badge badge-dev">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        En développement
+                    </div>
+                    <div class="project-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M5 17h14M5 17a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM23 17a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/>
+                            <path d="M5 17H3v-5l2-6h14l2 6v5h-2"/>
+                            <path d="M8 11h8"/>
+                        </svg>
+                    </div>
                     <h3>Gestion de Flotte Auto</h3>
                     <p>Location, suivi entretien, réservations, facturation et historique des véhicules.</p>
                     <div class="project-tags"><span>Spring Boot</span><span>Angular</span><span>MySQL</span></div>
                 </article>
 
+                <!-- Projet : RH -->
                 <article class="project-card">
-                  <div class="project-badge">
-                <svg   svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                    <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                En production
-                </div>
-                  <!--  Bâtiment -->
-                <div class="project-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <rect x="4" y="2" width="16" height="20" rx="2"/>
-                        <path d="M9 22v-4h6v4"/>
-                        <path d="M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M16 14h.01M8 10h.01M8 14h.01"/>
-                    </svg>
-                </div>
-                </div>
+                    <div class="project-badge badge-dev">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        En développement
+                    </div>
+                    <div class="project-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="4" y="2" width="16" height="20" rx="2"/>
+                            <path d="M9 22v-4h6v4"/>
+                            <path d="M8 6h.01M16 6h.01M12 6h.01M12 10h.01M12 14h.01M16 10h.01M16 14h.01M8 10h.01M8 14h.01"/>
+                        </svg>
+                    </div>
                     <h3>Gestion des Ressources Humaines</h3>
                     <p>Employés, congés, paie, évaluations et organigramme dynamique.</p>
                     <div class="project-tags"><span>Spring Boot</span><span>Angular</span><span>MySQL</span></div>
                 </article>
 
+                <!-- Projet : Portail Client -->
                 <article class="project-card">
-                            <div class="project-badge">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                        <polyline points="22 4 12 14.01 9 11.01"/>
-                    </svg>
-                    En production
-                </div>
-                   <!--  Mallette -->
-                <div class="project-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <rect x="2" y="7" width="20" height="14" rx="2"/>
-                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
-                    </svg>
-                </div>
-                </div>
+                    <div class="project-badge badge-dev">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        En développement
+                    </div>
+                    <div class="project-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="2" y="7" width="20" height="14" rx="2"/>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                        </svg>
+                    </div>
                     <h3>Portail Client & Facturation</h3>
                     <p>Espace client, devis, factures PDF, paiements et suivi des commandes.</p>
                     <div class="project-tags"><span>Spring Boot</span><span>Angular</span><span>Stripe</span></div>
                 </article>
 
+                <!-- Projet : E-commerce -->
                 <article class="project-card">
-                  <div class="project-badge">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                        <polyline points="22 4 12 14.01 9 11.01"/>
-                    </svg>
-                    En production
-                </div>
-                    <!--  Panier -->
-                <div class="project-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <circle cx="9" cy="21" r="1"/>
-                        <circle cx="20" cy="21" r="1"/>
-                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
-                    </svg>
-                </div>
+                    <div class="project-badge badge-dev">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        En développement
+                    </div>
+                    <div class="project-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="9" cy="21" r="1"/>
+                            <circle cx="20" cy="21" r="1"/>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+                        </svg>
+                    </div>
                     <h3>E-commerce sur mesure</h3>
                     <p>Catalogue produits, panier, paiement mobile money et back-office admin.</p>
                     <div class="project-tags"><span>Spring Boot</span><span>Angular</span><span>MySQL</span></div>
                 </article>
 
+                <!-- Projet : Bibliothèque -->
                 <article class="project-card">
-                    <div class="project-badge">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                        <polyline points="22 4 12 14.01 9 11.01"/>
-                    </svg>
-                    En production
-                </div>
-                 <!--  Livre -->
-                <div class="project-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
-                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
-                    </svg>
-                </div>
+                    <div class="project-badge badge-dev">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        En développement
+                    </div>
+                    <div class="project-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                        </svg>
+                    </div>
                     <h3>Bibliothèque Numérique</h3>
                     <p>Gestion des ouvrages, prêts, retours, réservations et amendes.</p>
                     <div class="project-tags"><span>Spring Boot</span><span>Angular</span><span>MySQL</span></div>
                 </article>
 
+                <!-- Projet : Restaurant -->
                 <article class="project-card">
-                   <div class="project-badge">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                    <polyline points="22 4 12 14.01 9 11.01"/>
-                </svg>
-                En production
-            </div>
-                   <!-- Couverts -->
-                <div class="project-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
-                        <path d="M7 2v20"/>
-                        <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/>
-                    </svg>
-                </div>
+                    <div class="project-badge badge-dev">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        En développement
+                    </div>
+                    <div class="project-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2"/>
+                            <path d="M7 2v20"/>
+                            <path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3zm0 0v7"/>
+                        </svg>
+                    </div>
                     <h3>Gestion Restaurant</h3>
                     <p>Menus, commandes, tables, caisse et suivi des stocks cuisine.</p>
                     <div class="project-tags"><span>Spring Boot</span><span>Angular</span><span>MySQL</span></div>
                 </article>
 
+                <!-- Projet : Application Mobile École -->
                 <article class="project-card">
                     <div class="project-badge badge-dev">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <circle cx="12" cy="12" r="10"/>
-                        <polyline points="12 6 12 12 16 14"/>
-                    </svg>
-                    En développement
-                </div>
-                    <!-- Smartphone -->
-                <div class="project-icon">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                        <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
-                        <line x1="12" y1="18" x2="12.01" y2="18"/>
-                    </svg>
-                </div>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        En développement
+                    </div>
+                    <div class="project-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"/>
+                            <line x1="12" y1="18" x2="12.01" y2="18"/>
+                        </svg>
+                    </div>
                     <h3>Application Mobile École</h3>
                     <p>Version mobile Flutter pour parents et élèves : notes, absences, actualités.</p>
                     <div class="project-tags"><span>Flutter</span><span>Dart</span><span>REST API</span></div>
@@ -508,23 +501,24 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-photo">
-                    <img src="photo.jpg" alt="Portrait du fondateur de Solution Numérique" loading="lazy">
+                    <img src="photo.jpg" alt="L'équipe de Solution Numérique" loading="lazy">
                 </div>
                 <div class="about-text">
                     <span class="section-tag">// À propos</span>
                     <h2 class="section-title">Derrière le code</h2>
                     <p>
-                        Je suis <strong>fondateur de Solution Numérique</strong>, développeur full-stack basé à Bamako.
-                        J'accompagne écoles, cliniques et entreprises dans leur transformation digitale.
+                        Nous sommes une équipe de développeurs full-stack basée à Bamako,
+                        fondateurs de <strong>Solution Numérique</strong>.
+                        Nous accompagnons écoles, cliniques et entreprises dans leur transformation digitale.
                     </p>
                     <p>
-                        Ma spécialité : transformer un besoin métier complexe en une application
-                        simple, rapide et fiable. Je maîtrise toute la chaîne — du design à la
+                        Notre spécialité : transformer un besoin métier complexe en une application
+                        simple, rapide et fiable. Nous maîtrisons toute la chaîne — du design à la
                         mise en production, en passant par l'hébergement et la maintenance.
                     </p>
                     <div class="about-stats">
-                        <div><strong>10+</strong><span>Sites livrés</span></div>
-                        <div><strong>15+</strong><span>Projets</span></div>
+                        <div><strong>3+</strong><span>Sites livrés</span></div>
+                        <div><strong>6+</strong><span>Projets</span></div>
                         <div><strong>100%</strong><span>Sur mesure</span></div>
                     </div>
                 </div>
@@ -532,12 +526,88 @@
         </div>
     </section>
 
+    <!-- ========== TÉMOIGNAGES ========== -->
+    <section class="section section-dark" id="temoignages">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">// Témoignages</span>
+                <h2 class="section-title">Ce que disent nos clients</h2>
+                <p class="section-subtitle">
+                    La confiance de nos clients est notre meilleure publicité.
+                </p>
+            </div>
+
+            <div class="testimonials-grid">
+
+                <article class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">
+                        "Solution Numérique a transformé notre gestion scolaire. Les bulletins, les
+                        notes et la communication avec les parents sont désormais automatisés.
+                        Un gain de temps énorme pour nos équipes."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">D</div>
+                        <div>
+                            <strong>Direction</strong>
+                            <span>Collège Royal, Bamako</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">
+                        "Notre plateforme de gestion de stock tourne sans interruption depuis sa
+                        mise en ligne. L'équipe est réactive et à l'écoute. Une collaboration
+                        de confiance."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">G</div>
+                        <div>
+                            <strong>Gestionnaire</strong>
+                            <span>Entreprise commerciale, Bamako</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">
+                        "Professionnalisme, écoute et respect des délais. Nous recommandons
+                        Solution Numérique pour tout projet d'application métier au Mali."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">C</div>
+                        <div>
+                            <strong>Client</strong>
+                            <span>Cabinet de conseil</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
     <!-- ========== PROCESSUS ========== -->
-    <section class="section section-dark" id="processus">
+    <section class="section" id="processus">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">// Méthode</span>
-                <h2 class="section-title">Comment on travaille ensemble</h2>
+                <h2 class="section-title">Comment nous travaillons ensemble</h2>
                 <p class="section-subtitle">
                     Un processus clair, transparent et itératif, du premier échange à la mise en ligne.
                 </p>
@@ -547,7 +617,7 @@
                 <div class="process-step">
                     <div class="step-number">01</div>
                     <h3>Découverte</h3>
-                    <p>On échange sur votre besoin, vos objectifs et vos contraintes. Je vous propose une solution adaptée.</p>
+                    <p>Nous échangeons sur votre besoin, vos objectifs et vos contraintes. Nous vous proposons une solution adaptée.</p>
                 </div>
                 <div class="process-step">
                     <div class="step-number">02</div>
@@ -569,11 +639,11 @@
     </section>
 
     <!-- ========== STACK TECHNIQUE ========== -->
-    <section class="section" id="stack">
+    <section class="section section-dark" id="stack">
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">// Technologies</span>
-                <h2 class="section-title">Ma stack technique</h2>
+                <h2 class="section-title">Notre stack technique</h2>
                 <p class="section-subtitle">
                     Des technologies modernes, éprouvées et adaptées à chaque projet.
                 </p>
@@ -649,13 +719,14 @@
             </h2>
             <p class="cta-subtitle">
                 Que vous soyez une école, une clinique, un commerce ou une entreprise,
-                je peux vous aider à digitaliser votre activité.
+                nous pouvons vous aider à digitaliser votre activité.
             </p>
 
             <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
-                <!-- Remplacez par votre clé Web3Forms (gratuit sur web3forms.com) -->
-                <input type="hidden" name="access_key" value="VOTRE_CLE_WEB3FORMS">
-                <input type="hidden" name="subject" value="Nouveau message depuis solutionnumerique.com">
+                <!-- Remplacez VOTRE_CLE_WEB3FORMS par votre clé obtenue sur https://web3forms.com -->
+                <input type="hidden" name="access_key" value="ded6f7b2-cdbf-4d72-9e54-e00eb12c99f8">
+                <input type="hidden" name="subject" value="Nouveau message depuis numeriquesolution.com">
+                <input type="hidden" name="from_name" value="Site Solution Numérique">
                 <input type="checkbox" name="botcheck" style="display:none">
 
                 <div class="form-row">
@@ -672,33 +743,33 @@
             </form>
 
             <div class="cta-info">
-    <span class="cta-item">
-        <svg class="cta-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-            <circle cx="12" cy="10" r="3"></circle>
-        </svg>
-        Bamako, Mali
-    </span>
-    <a href="tel:+22377915103" class="cta-item">
-        <svg class="cta-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-        </svg>
-        +223 77 91 51 03
-    </a>
-    <a href="mailto:contact@solutionnumerique.ml" class="cta-item">
-        <svg class="cta-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-            <path d="m22 7-10 7L2 7"></path>
-        </svg>
-        contact@solutionnumerique.ml
-    </a>
-    <a href="https://wa.me/22377915103" target="_blank" rel="noopener" class="cta-item">
-        <svg class="cta-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
-        </svg>
-        WhatsApp
-    </a>
-</div>
+                <span class="cta-item">
+                    <svg class="cta-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    Bamako, Mali
+                </span>
+                <a href="tel:+22377915103" class="cta-item">
+                    <svg class="cta-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    +223 77 91 51 03
+                </a>
+                <a href="mailto:contact@numeriquesolution.com" class="cta-item">
+                    <svg class="cta-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+                        <path d="m22 7-10 7L2 7"></path>
+                    </svg>
+                    contact@numeriquesolution.com
+                </a>
+                <a href="https://wa.me/22377915103" target="_blank" rel="noopener" class="cta-item">
+                    <svg class="cta-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+                    </svg>
+                    WhatsApp
+                </a>
+            </div>
         </div>
     </section>
 
@@ -706,7 +777,7 @@
     <footer class="footer">
         <div class="container footer-content">
             <div class="footer-brand">
-                <span class="logo-icon">◈</span>
+                <img src="logo.png" alt="" class="logo-img" width="36" height="36">
                 <span>Solution Numérique</span>
             </div>
             <p class="footer-tagline">Créateur de solutions digitales — Bamako, Mali</p>
